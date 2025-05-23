@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav id="navbar">
+    <div class="container">
+      <a href="#home" class="logo">MyPortfolio</a>
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header id="home" class="section">
+    <div class="container">
+      <h1>Welcome to My Portfolio</h1>
+      <p>Front-end Developer | Designer | Problem Solver</p>
+      <a href="#projects" class="btn">View My Work</a>
+    </div>
+  </header>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <img src="C:\Users\user\Downloads\programming-background-with-person-working-with-codes-computer.jpg" alt="About Me" />
+        <div>
+          <p>Hello! I’m a passionate front-end developer with experience in building beautiful and responsive websites. I love crafting clean code and intuitive UI.</p>
+          <p>Skills: HTML, CSS, JavaScript, React, UI/UX Design</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>1. To-Do List</h3>
+          <p>A simple task manager app built with JavaScript.</p>
+          <a href="todo.html" class="btn small-btn">View Project</a>
+        </div>
+        <div class="project-card">
+          <h3>2. Form Validation</h3>
+          <p>Interactive contact form with real-time validation.</p>
+          <a href="form.html" class="btn small-btn">View Project</a>
+        </div>
+        <div class="project-card">
+          <h3>3. Home Page</h3>
+          <p>Basic landing page design to showcase my skills.</p>
+          <a href="ecommerce.html" class="btn small-btn">View Project</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form id="contact-form" novalidate>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input id="name" type="text" required />
+          <small class="error" id="name-error"></small>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input id="email" type="email" required />
+          <small class="error" id="email-error"></small>
+        </div>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 MyPortfolio. All rights reserved.</p>
+  </footer>
+
+  <script src="form.js"></script>
+  <script src="script3.js"></script>
+</body>
+</html>

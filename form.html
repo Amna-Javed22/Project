@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Form Validation Project</title>
+  <link rel="stylesheet" href="stylesheet.css" />
+</head>
+<body class="form-body">
+  <h1>Form Validation</h1>
+  <form id="contact-form" novalidate>
+    <input type="text" id="name" placeholder="Name" required />
+    <div id="name-error" class="error"></div>
+
+    <input type="email" id="email" placeholder="Email" required />
+    <div id="email-error" class="error"></div>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <script src="form.js"></script>
+</body>
+</html>
